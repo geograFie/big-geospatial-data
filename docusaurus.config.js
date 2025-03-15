@@ -40,7 +40,7 @@ const config = {
         // docs configuration
         docs: {
           routeBasePath: '/',
-          sidebarPath: './sidebars.js',
+          // sidebarPath: './sidebars.js',
         },
         blog: false,
 
