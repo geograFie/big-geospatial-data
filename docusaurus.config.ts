@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -40,7 +42,7 @@ const config = {
         // docs configuration
         docs: {
           routeBasePath: '/',
-          sidebarPath: './sidebars.js',
+          sidebarPath: './sidebars.ts',
         },
         blog: false,
 
@@ -71,8 +73,12 @@ const config = {
           },
           {
             href: 'https://github.com/geograFie/big-geospatial-data',
-            label: 'GitHub',
+            // label: 'GitHub',
             position: 'right',
+            html: '<i class="fa fa-github fa-lg"></i>', // Add GitHub icon
+            // html: '<i class="fa fa-github fa-lg"></i>', // Add GitHub icon
+            // icon: faGithub,
+            // add github icon to link
           },
         ],
       },
