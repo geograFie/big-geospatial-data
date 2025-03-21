@@ -64,21 +64,31 @@ const config = {
           alt: 'Big Geospatial Data Logo',
           src: 'imgs/custom_map_vector_points.svg',
         },
+        hideOnScroll: false,
+        // style: 'dark',
         items: [
+          // left side
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            label: 'Tutorial',
+            label: 'Library',
             position: 'left',
+          },
+          // right side
+          {
+            href: 'https://orcid.org/0009-0003-5707-4705',
+            position: 'right',
+            html: '<i class="fa-brands fa-orcid"></i>' // add icon
+          },
+          {
+            href: 'https://www.linkedin.com/in/friedrich-roeseler-048396253',
+            position: 'right',
+            html: '<i class="fa-brands fa-linkedin"></i>' // add icon
           },
           {
             href: 'https://github.com/geograFie/big-geospatial-data',
-            // label: 'GitHub',
             position: 'right',
-            html: '<i class="fa fa-github fa-lg"></i>', // Add GitHub icon
-            // html: '<i class="fa fa-github fa-lg"></i>', // Add GitHub icon
-            // icon: faGithub,
-            // add github icon to link
+            html: '<i class="fa-brands fa-github"></i>' // add GitHub icon
           },
         ],
       },
@@ -86,26 +96,8 @@ const config = {
       // footer configuration
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [],
-          },
-          {
-            title: 'Community',
-            items: [],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/geograFie/big-geospatial-data',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Foo Bar.`,
+        links: [],
+        copyright: `Copyright © ${new Date().getFullYear()} Friedrich Röseler. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.`,
       },
       prism: {
         theme: prismThemes.github,
