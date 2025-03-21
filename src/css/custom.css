@@ -1,30 +1,58 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+* Any CSS included here will be global. The classic template
+* bundles Infima by default. Infima is a CSS framework designed to
+* work well for content-centric websites.
+*/
+
+/* @import 'font-awesome/css/font-awesome.min.css'; */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/* import colors from another css file */
+@import './nord.css';
 
 /* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+[data-theme='light'] {
+  --ifm-color-primary: #8d1565;
+  --ifm-color-primary-dark: #7f135b;
+  --ifm-color-primary-darker: #781256;
+  --ifm-color-primary-darkest: #630f47;
+  --ifm-color-primary-light: #9b176f;
+  --ifm-color-primary-lighter: #a21874;
+  --ifm-color-primary-lightest: #b71b83;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  color: var(--nord0);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* for readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #7edce2;
+  --ifm-color-primary-dark: #61d4dc;
+  --ifm-color-primary-darker: #53d0d8;
+  --ifm-color-primary-darkest: #2dc0c9;
+  --ifm-color-primary-light: #9be4e8;
+  --ifm-color-primary-lighter: #a9e8ec;
+  --ifm-color-primary-lightest: #d4f3f5;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  background-color: var(--nord1);
+  color: var(--nord6);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: var(--nord1);
+}
+
+.footer {
+  background-color: var(--nord0);
+}
+
+/* navbar icon size */
+.navbar__item i {
+  font-size: 1.0em;
+  margin-right: 4px; /* add horizontal space between items */
+}
+
+/* navbar text item size */
+.navbar__item {
+  font-size: 1.3em;
 }
