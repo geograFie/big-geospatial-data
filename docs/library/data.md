@@ -79,6 +79,23 @@ https://di-pgc.img.arcgis.com/arcgis/services/arcticdem_latest/ImageServer/WMSSe
 
 ## Data
 
+| Product | Description | Application | License |
+| ------- | ----------- | ----------- | ------- |
+|[Global Dynamic Land Cover](https://land.copernicus.eu/en/products/global-dynamic-land-cover)| global annual land cover fractions from [CLMS](https://land.copernicus.eu/en) (gridded 100 m) | land cover ||
+|[SoilGrids](https://www.isric.org/explore/soilgrids/faq-soilgrids)| global gridded soil information from [ISRIC](https://www.isric.org) (C, N, bulk density, texture ...) | soil properties | [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+|[Dai et al. (2025): coastline database](https://doi.org/10.18739/A2610VT7V)|global high resolution coastline database from satellite imagery (2009 - 2023) (gridded 2 m) | ||
+
 ## Data repositories and APIs
+
+| Tool | Description | Application | License |
+| ------- | ----------- | ----------- | ------- |
+|[Zenodo](https://zenodo.org)| open-access repository for research data, software, publications, and other scientific outputs | ||
+|[Pangaea](https://www.pangaea.de)||||
+|[DataONE](https://www.dataone.org)||||
+|[Climate Data Store (CDS)](https://cds.climate.copernicus.eu)||||
+|[STAC APIs](https://stacindex.org/catalogs#/)| a list of [STAC](https://stacspec.org/en) APIs and Static Catalogs|||
+|[EODAG](https://eodag.readthedocs.io/en/stable/)| Earth Observation Data Access Gateway (EODAG) to simplify searching for and downloading EO data, available as CLI and Python API |||
+
+<!-- <br> -->
 
 ## File types
